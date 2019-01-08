@@ -1,0 +1,127 @@
+.outerDiv{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.headerContainer{
+    display: flex;
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+}
+
+
+.headerImg{
+    height: 100px;
+    width: 200px;
+
+}
+
+.titleSumContainer{
+    display: flex;
+    flex-direction: column;;
+    text-align: center;
+    margin-right: 160px;
+}
+
+.titleSumContainer h2{
+    
+}
+
+.titleSumContainer p{
+
+    text-align: left;
+    
+}
+
+
+
+.skillsContainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.skillsContainer h1{
+    
+    
+}
+
+.listItemsContainer{
+
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: -50px;
+   
+}
+
+.listItemsContainer div{
+    margin: 50px;
+}
+
+.edExContainer{
+    display: flex;
+    border: 1px solid black;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+    margin-top: 10px;
+}
+
+.edExContainer > div{
+    border: 1px solid black;
+    width: 50%;
+    justify-content: center;
+}
+
+.edExContainer ul{
+    text-align: left;
+    line-height: 20px;
+}
+
+@media all and (max-width: 600px){
+    .outerDiv * {
+        display: flex;
+        flex-flow: column;  
+        height: auto;
+        width: auto;
+    }
+    .edExContainer > div{
+        width: auto;
+    }
+
+    .titleSumContainer{
+        margin: 0;
+    }
+    .skillsContainer div{
+        margin: 0px;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
