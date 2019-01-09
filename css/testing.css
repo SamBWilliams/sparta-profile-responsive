@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+.outerDiv{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+
+.headerContainer{
+    display: flex;
+    border: 1px solid black;
+    height: auto;
+    width: auto;
+    
+
+}
+
+.headerContainer > div{
+    margin: 10px;
+    
+}
+
+.imgDiv{
+    border: 1px solid black;
+    height: 200px;
+}
+
+
+
+.headSumContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.headSumContainer h1{
+    margin-left: 30px;
+    margin-top: 80px;
+}
+
+
+
+
+
+@media all and (max-width: 600px){
+    .outerDiv * {
+        display: flex;
+        flex-flow: column;  
+        height: auto;
+        width: auto;
+    }
