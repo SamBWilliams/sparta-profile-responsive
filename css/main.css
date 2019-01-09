@@ -1,10 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
 .outerDiv{
     margin-right: 10%;
     margin-left: 10%;
 }
 
-*{
-    box-sizing: border-box;
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgLinkContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgLinks{
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    margin-left: 80px;
 }
 
 .headerContainer{
@@ -12,6 +29,8 @@
     border: 1px solid black;
     height: auto;
     width: auto;
+    background-image: url(../img/depositphotos_99798984-stock-illustration-abstract-digital-web-site-header.jpg);
+    background-size: cover;
 }
 
 
@@ -21,20 +40,44 @@
 
 }
 
-.titleSumContainer{
+.sumContainer{
     display: flex;
     flex-direction: column;;
     text-align: center;
-    margin-right: 160px;
+    transition: 1s;
+    margin: 0;
+    margin-top: 10px;
+}
+.sumContainer h1{
+    margin-top: 10px;
+    background-color: black;
+    padding: 15px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    font-family: sans-serif;
+    color: white;
+    opacity: 0.80;
 }
 
-.titleSumContainer h2{
-    
+.sumContainer h2{
+    margin-top: 10px;
+    background-color: black;
+    padding: 5px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    color: white;
+    opacity: 0.70;
 }
-
-.titleSumContainer p{
-
+.sumContainer p{
+    background-color: black;
+    padding: 15px;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 5%;
+    opacity: 0.6;
     text-align: left;
+    transition: 1s;
     
 }
 
@@ -54,7 +97,14 @@
 }
 
 .skillsContainer h1{
-    
+    margin-top: 10px;
+    background-color: black;
+    padding: 5px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    color: white;
+    opacity: 0.70;
     
 }
 
@@ -71,6 +121,18 @@
     margin: 50px;
 }
 
+.listItemsContainer li{
+    text-decoration: none;
+}
+
+.listItemsContainer li:hover{
+    font-weight: bold;
+    transition: 1s; 
+    
+    
+
+}
+
 .edExContainer{
     display: flex;
     border: 1px solid black;
@@ -78,6 +140,18 @@
     justify-content: center;
     height: auto;
     margin-top: 10px;
+}
+
+.edExContainer h1{
+    margin-top: 10px;
+    background-color: black;
+    padding: 5px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    color: white;
+    opacity: 0.70;
+
 }
 
 .edExContainer > div{
@@ -104,10 +178,31 @@
 
     .titleSumContainer{
         margin: 0;
+
+
     }
     .skillsContainer div{
         margin: 0px;
     }
+
+    .headerContainer{
+        background-image: url(../img/depositphotos_99798984-stock-illustration-abstract-digital-web-site-header.jpg)
+    }
+
+    .sumContainer{
+        color: white;
+        margin: 0 10px;
+    }
+
+
+    .imgLinks{
+        height: 50px;
+        width: 50px;
+    }
+    .imgLinkContainer{
+        flex-direction: row;
+    }
+}
     
     
 
